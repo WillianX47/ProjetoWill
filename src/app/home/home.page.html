@@ -1,37 +1,98 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Projeto Will Letii
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
 
 <ion-content [fullscreen]="true">
   
   <ion-grid>
-    <ion-row *ngFor="let message of messages">
-      <ion-col size="9" *ngIf="currentUser !== message.user" class="message other-message">
-          <b>{{ message.user }}</b><br>
-          <span>{{ message.msg }}</span>
-      </ion-col>
-
-      <ion-col offset="3" size="9" *ngIf="currentUser === message.user" class="message my-message">
-        <b>{{ message.user }}</b><br>
-        <span>{{ message.msg }}</span>
-    </ion-col>
+    <ion-row>
+      <ion-col size="12" class="message narrador-message">
+          <span>Mais uma tarde de domingo... Will estava sem fazer nada, a mais de meses sem sair de casa por conta da pandemia. Então um pensamento veio à mente de Will: “e aquelas caixas empoeiradas no porão? Acho que vale apena dar uma olhada”. Revirando as caixas, ele encontra seu velho videogame. Animado, ele conecta a TV para ver se ainda funciona, na primeira tentativa, o videogame não funciona, mas na segunda, um clarão aparece na TV e Will é sugado para dentro do mundo de um jogo.</span>
+        </ion-col>
     </ion-row>
   </ion-grid>
 
+  <ion-grid>
+    <ion-row>
+      <ion-col offset="3" size="9" class="message my-message">
+          <b>Pensamento de Will</b><br>
+          <span>Mas o que aconteceu aqui? Que lugar mais estranho, mas me parece familiar, cogumelos... canos... tijolos... isso está parecendo muito um mundo de jogo, principalmente Super Mario</span>
+        </ion-col>
+    </ion-row>
+  </ion-grid>
   
-  <ion-item (click)="sendMessage()">
+  <ion-grid>
+    <ion-row>
+      <ion-col size="12" class="message narrador-message">
+          <span>Um pouco confuso, Will decide seguir caminhando até que encontra um cogumelo</span>
+        </ion-col>
+    </ion-row>
+  </ion-grid>
 
-  </ion-item>
+  <ion-grid>
+    <ion-row>
+      <ion-col offset="3" size="9" class="message my-message">
+          <b>Pensamento de Will</b><br>
+          <span>Tem algo dentro desse cogumelo, deixa eu dar uma olhada</span>
+        </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col size="12" class="message narrador-message">
+          <span>Pegando uma mensagem que estava no cogumelo, ele descobre que realmente está no mundo do Super Mario, e que Mario e Luigi estão presos dentro da internet, parecem dois vovôs assustados e precisam de ajuda, e que esse cogumelo também é um dispositivo para poder materializar equipamentos de tecnologia para ajudá-lo em sua jornada. De repente, a princesa Peach aparece e diz que recebeu um sinal que teria um alguém perdido no reino que iria ajudar a encontrar Mario e Luigi.</span>
+        </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col offset="3" size="9" class="message my-message">
+          <b>Will</b><br>
+          <span>Princesa Peach!</span>
+        </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col size="9" class="message peach-message">
+          <b>Peach</b><br>
+          <span>Como você me conhece?</span>
+        </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col offset="3" size="9" class="message my-message">
+          <b>Will</b><img width="30" height="30" src="https://i.pinimg.com/564x/2f/d7/d1/2fd7d1555824096ebdeda7698a8a18fd.jpg" alt=""><br>
+          <span>Eh... eu assistia as competições de kart do reino</span>
+        </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col size="9" class="message peach-message">
+          <b>Peach</b><br>
+          <span>Ah sim, então, pode me ajudar? Apareceu um negócio estranho no castelo e eles entraram</span>
+        </ion-col>
+    </ion-row>
+  </ion-grid>
+
   <br>
-  <ion-item (click)="sendMessage2()">
+  <ion-grid style="text-align: end;">
+    <ion-button style="text-transform: none;" routerLink="/caminho-um" size="default" shape="round">
+      Claro princesa, vamos para o castelo! &nbsp;
+      <ion-icon name="paper-plane-outline"></ion-icon>
+    </ion-button>
+  </ion-grid>
 
-  </ion-item>
-
-  
+  <ion-grid style="text-align: end;">
+    <ion-button style="text-transform: none;" routerLink="/caminho-dois" size="default" shape="round">
+      Tô com preguiça &nbsp;
+      <ion-icon name="paper-plane-outline"></ion-icon>
+    </ion-button>
+  </ion-grid>
 
 </ion-content>
 

@@ -5,16 +5,31 @@
   white-space: pre-wrap;
 }
  
+.narrador-message {
+  background: var(--ion-color-tertiary);
+  color: #fff;
+}
+
 .my-message {
-  background: var(--ion-color-danger);
+  background: var(--ion-color-primary);
   color: #fff;
 }
  
-.other-message {
+.mario-message {
+  background: var(--ion-color-danger);
+  color: #fff;
+}
+
+.luigi-message {
   background: var(--ion-color-success);
   color: #fff;
 }
  
+.peach-message {
+  background: var(--ion-color-warning);
+  color: #fff;
+}
+
 .time {
   color: #dfdfdf;
   float: right;

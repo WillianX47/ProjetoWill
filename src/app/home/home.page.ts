@@ -11,33 +11,21 @@ export class HomePage {
 
   messages = [
     {
-      user:'Simon',
-      msg: 'Hey Wasup'
+      user:'Mario',
+      msg: 'It´sa mi Mariooo'
     },
     {
-      user:'Max',
-      msg: 'Working on the ionic mission'
+      user:'Luigi',
+      msg: 'Mario para com isso q da vergonha'
+    },
+    {
+      user:'Mario',
+      msg: 'It´sa mi Mariooo'
     }
   ];
 
   currentUser ='Max';
-  newMsg ='';
-
-  sendMessage(){
-    this.messages.push({
-      user: 'Max',
-      msg: this.newMsg
-    });
-    this.newMsg = 'Funcionou';
-  }
-
-  sendMessage2(){
-    this.messages.push({
-      user: 'Max',
-      msg: this.newMsg
-    });
-    this.newMsg = 'mensagem dois';
-  }
 
   
+
 }

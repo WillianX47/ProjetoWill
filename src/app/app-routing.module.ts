@@ -11,6 +11,14 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'caminho-um',
+    loadChildren: () => import('./caminho-um/caminho-um.module').then( m => m.CaminhoUmPageModule)
+  },
+  {
+    path: 'caminho-dois',
+    loadChildren: () => import('./caminho-dois/caminho-dois.module').then( m => m.CaminhoDoisPageModule)
+  },
 ];
 
 @NgModule({

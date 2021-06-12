@@ -9,8 +9,34 @@ export class HomePage {
 
   constructor() {}
 
-  public op1(){
-    console.log('USE O GPS');
+  messages = [
+    {
+      user:'Simon',
+      msg: 'Hey Wasup'
+    },
+    {
+      user:'Max',
+      msg: 'Working on the ionic mission'
+    }
+  ];
+
+  currentUser ='Max';
+  newMsg ='';
+
+  sendMessage(){
+    this.messages.push({
+      user: 'Max',
+      msg: this.newMsg
+    });
+    this.newMsg = 'Funcionou';
+  }
+
+  sendMessage2(){
+    this.messages.push({
+      user: 'Max',
+      msg: this.newMsg
+    });
+    this.newMsg = 'mensagem dois';
   }
 
   

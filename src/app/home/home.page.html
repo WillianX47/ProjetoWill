@@ -9,28 +9,29 @@
 <ion-content [fullscreen]="true">
   
   <ion-grid>
-    <ion-row>
-      <ion-col size="9" class="message my-message">
-          <b>Mario</b><br>
-          <span>Tudo começou em um dia de tédio no domin a noite, eu não tinha para fazer, então pensei, po.. e meu videogame antigo?</span>
+    <ion-row *ngFor="let message of messages">
+      <ion-col size="9" *ngIf="currentUser !== message.user" class="message other-message">
+          <b>{{ message.user }}</b><br>
+          <span>{{ message.msg }}</span>
       </ion-col>
+
+      <ion-col offset="3" size="9" *ngIf="currentUser === message.user" class="message my-message">
+        <b>{{ message.user }}</b><br>
+        <span>{{ message.msg }}</span>
+    </ion-col>
     </ion-row>
   </ion-grid>
 
-  <ion-grid>
-    <ion-row>
-      <ion-col offset="3" size="9" class="message other-message">
-          <b>Peach</b><br>
-          <span>Tudo começou em um dia de tédio no domingo a noite, eu não tinha para fazer, então pensei, po.. e meu videogame antigo?</span>
-      </ion-col>
-    </ion-row>
-  </ion-grid>
+  
+  <ion-item (click)="sendMessage()">
 
-  <ion-grid style="text-align: center;">
-    <ion-button (click) = op1()>
-      USE O GPS
-    </ion-button>
-  </ion-grid>
+  </ion-item>
+  <br>
+  <ion-item (click)="sendMessage2()">
 
+  </ion-item>
+
+  
 
 </ion-content>
+

@@ -39,6 +39,10 @@ const routes: Routes = [
     path: 'caminho-um-dois-um',
     loadChildren: () => import('./caminho-um-dois-um/caminho-um-dois-um.module').then( m => m.CaminhoUmDoisUmPageModule)
   },
+  {
+    path: 'caminho-um-dois-dois-dois',
+    loadChildren: () => import('./caminho-um-dois-dois-dois/caminho-um-dois-dois-dois.module').then( m => m.CaminhoUmDoisDoisDoisPageModule)
+  },
 ];
 
 @NgModule({
